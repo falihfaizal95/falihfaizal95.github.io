@@ -3,110 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Falih Faizal</title>
+    <meta name="description" content="Falih Faizal - Computer Science Student at University of Georgia | Software Developer | AI Research Assistant">
+    <title>Falih Faizal | Computer Science Student & Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head> 
 <body>
-    <nav>
+    <nav class="sticky-nav">
         <div class="brand"><a href="index.html">Falih Faizal</a></div>
-
-        <a class="contact-link" href="contact.html">Contact Falih Faizal</a>
+        <div class="nav-links">
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a class="contact-link" href="contact.html">Contact</a>
+        </div>
     </nav>
-    <header class = "splash">
+    <header class="splash">
       <h1>Falih Faizal</h1>
-
-    <img src="images/IMG_FF37021B287D-1.jpeg" width="200" height="250" alt="Falih Faizal Headshot">
-    <p class="address">6025 Farrell Way, Duluth, Georgia, 30097 &#x25A0; (678) 920-6711 &#x25A0; mf07861@uga.edu</p>
-    <p class="tagline"> I am a 3rd year Computer Science Student at the University of Georgia who loves to code and build new things!</p>
+      <img src="images/IMG_FF37021B287D-1.jpeg" width="200" height="250" alt="Falih Faizal Headshot">
+      <p class="address">
+        <a href="mailto:Falih.faizal95@gmail.com"><i class="fas fa-envelope"></i> Falih.faizal95@gmail.com</a> 
+        <span class="separator">&#x25A0;</span>
+        <a href="tel:6789206711"><i class="fas fa-phone"></i> (678) 920-6711</a>
+        <span class="separator">&#x25A0;</span>
+        <a href="https://linkedin.com/in/falih-faizal-200762236/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <span class="separator">&#x25A0;</span>
+        <a href="https://github.com/falihfaizal95" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </p>
+      <p class="tagline">Computer Science Student at University of Georgia | AI Research Assistant | Full-Stack Developer</p>
     </header>
 
     <main>
     <section id="education">
-        <h3>Education</h3>
-        <dl class="grid">
-            <dt>University of Georgia</dt>
-            <dd>Bachelors of Science in Computer Science - Expected May 2027; GPA: 3.7</dd>
-        </dl>
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="experience-card">
+            <div class="exp-header">
+                <h4>University of Georgia</h4>
+                <span class="location">Athens, GA</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">Bachelor of Science in Computer Science | Certification in Artificial Intelligence</p>
+                <p class="exp-date">Expected May 2027</p>
+                <p class="exp-description"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Computing Architecture, Systems Programming, Object Oriented Programming, Software Development II, Database Management, Web Programming, Discrete Mathematics, Linear Algebra, Computer Science I, Computing Ethics, Data Science I, Calculus II</p>
+            </div>
+        </div>
     </section>
-    <section id="honors">
-        <h3>
-            Honors and Awards
-        </h3>
-        <dl class="grid">
-            <dt>Dean's List</dt>
-                <dd> 2024-2025</dd>
-            <dt> Zell Miller Scholarship</dt>
-                <dd>2025</dd>
-        </dl>
-    </section>
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>JavaFX</li>
-            <li>REST APis</li>
-            <li>Full-Stack Applications</li>
-        </ul>
-    </section>
+    
     <section id="experience">
-        <h3>
-            Leadership & Experience
-        </h3>
-        <dl class="grid">
-            <dt> Information Systems Intern at Trinity Health</dt>
-                <dd>May 2025 - August 2025 <a href="https://www.trinity-health.org"> | trinity-health.org</a></dd>
-                <dt>
-                    AI Research Assistant at The University of Georgia
-                </dt>
-                    <dd>August 2025 - Present<a href="https://vipr.uga.edu/team/agricultural-robotics-vipr-team/"> | Agricultural Robotics VIPR Team</a></dd>
-        </dl>
+        <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+        
+        <div class="experience-card">
+            <div class="exp-header">
+                <h4>UGA Agricultural Robotics Lab</h4>
+                <span class="location">Athens, GA</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">Undergraduate Research Assistant</p>
+                <p class="exp-date">August 2025 - Present</p>
+                <ul class="exp-bullets">
+                    <li>Collaborated with Professor Sultan Mahmud to design and build an autonomous poultry-farm robot, integrating navigation software and eco-friendly features to enhance animal welfare and operational efficiency</li>
+                    <li>Designed and tested autonomous-navigation logic on Raspberry Pi using Python, integrating motor-control scripts and ultrasonic-sensor feedback; refined turning behavior and reduced navigation errors across repeated indoor trials</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <h4>Trinity Health</h4>
+                <span class="location">Remote/On-site</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">Information Systems Intern</p>
+                <p class="exp-date">May 2025 - August 2025</p>
+                <ul class="exp-bullets">
+                    <li>Utilized Darik's Boot and Nuke and disk cloning software to securely wipe, reimage, and deploy 150+ computers and devices, ensuring standardized configurations and efficient rollouts across departments</li>
+                    <li>Audited IT assets and troubleshot hardware/software issues at user endpoints, improving inventory accuracy and reducing downtime for 200+ staff members, ultimately streamlining IT support operations and enhancing overall service reliability</li>
+                    <li>Supported configuration and maintenance of 30+ network devices (access points, switches), strengthening building-wide connectivity and reducing network-related service tickets by 25%, while contributing to stable and scalable network infrastructure</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <h4>FreeWorld Empire</h4>
+                <span class="location">Remote</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">UI/UX Intern</p>
+                <p class="exp-date">January 2025 - May 2025</p>
+                <ul class="exp-bullets">
+                    <li>Developed and customized responsive web interfaces using React and Node.js, applying user-centered design principles, WCAG accessibility standards, improving cross-platform usability and performance</li>
+                    <li>Conducted layout audits and implemented UX heuristics that reduced user drop-off rates by 20% on key pages; optimized site architecture and navigation through iterative design cycles, A/B testing, and performance analytics review</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <h4>SolutionZ Inc.</h4>
+                <span class="location">Georgia</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">Information Technology Intern</p>
+                <p class="exp-date">August 2022 - February 2023</p>
+                <ul class="exp-bullets">
+                    <li>Collaborated with 4 interns to allocate $50,000+ in grants to 20+ Georgia schools, expanding technology access; optimized network security and AV systems in 15+ conference rooms to boost data protection and collaboration</li>
+                    <li>Gained hands-on experience in network troubleshooting, software deployment, and AV technology integration within corporate environments, improving operational efficiency and supporting seamless day-to-day business functions</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="projects">
-        <h3>Projects</h3>
+        <h3><i class="fas fa-code"></i> Personal Projects</h3>
         <div class="three-col">
           <div class="card">
-            <h4>Vibra</h4>
-            <img src="images/proj2.png" width="300" height="200" alt="Vibra Image">
-            <ul>
-                <li>Built with Java and JavaFX</li>
-                <li>Used Apple Music API to fetch songs from the web and display, songs, albums timelines</li>
-                <li>Created a very interactive UI user layout to have a seamless experiece for the user</li>
-                <li>Used API sync requests, and caching.</li>
+            <div class="card-header">
+              <h4>LectureAI</h4>
+              <span class="project-date">July 2025 - Present</span>
+            </div>
+            <img src="images/proj1_img.png" width="300" height="200" alt="LectureAI Project Image" onerror="this.style.display='none'">
+            <ul class="project-list">
+                <li>Built LectureAI, a Next.js 14 + TypeScript app converting lecture recordings and YouTube videos into AI study notes, summaries, and key term definitions. Achieved 95%+ transcription accuracy and cut manual note-taking effort by 60%+</li>
+                <li>Engineered a Supabase-powered dashboard with AI-generated quizzes and progress tracking, delivering a mobile-first, responsive UI (Tailwind CSS + React). Processes 60-minute lectures in under 10 minutes and supports 100+ students across devices</li>
+                <li>Deployed on Vercel with auto-updates from GitHub; scaled to handle 500+ lecture uploads with &lt;5% error rate, boosting accessibility and engagement for students using diverse file formats (MP3, WAV, MP4, YouTube)</li>
             </ul>
+            <div class="tech-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Vercel</span>
+            </div>
         </div>
         <div class="card">
-            <h4>Book-Nook</h4>
-            <img src="images/proj2_img.png" width="300" height="200" alt="Book-Nook Image">
-            <ul>
-                <li>Developed using java, javafx and dictionary API</li>
-                <li>Created a very interactive GUI to display books with information of all sorts</li>
-                <li>Used a library APi to find all sorts of books that are needed</li>
+            <div class="card-header">
+              <h4>Vibra</h4>
+              <span class="project-date">August 2024 - Present</span>
+            </div>
+            <img src="images/proj2.png" width="300" height="200" alt="Vibra Project Image">
+            <ul class="project-list">
+                <li>Built a JavaFX desktop application integrating the Apple Music/iTunes API to search and display multimedia (songs, albums, artists, movies), with interactive gallery layouts, progress tracking, and randomized content refresh</li>
+                <li>Designed a modular OOP architecture in Java with inheritance, polymorphism, and interfaces; added robust error handling, async API requests, and caching to deliver 95%+ query accuracy and seamless user experience across 1,000s of entries</li>
+                <li>Improved reliability with 50+ JUnit tests, Maven dependency management, and Git version control; packaged via Maven Shade/JavaFX plugin for executable, cross-platform distribution</li>
             </ul>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">Maven</span>
+              <span class="tag">JUnit</span>
+              <span class="tag">REST API</span>
+            </div>
         </div>
         <div class="card">
-            <h3>BankIt</h3>
-            <img src="images/proj3.png" width="300" height="200" alt="Weather App Image">
-            <ul>
-                <li>Used ATM API from Git and Created my own version of Bank of America App</li>
-                <li>Practiced with Different Types of Arrays and Lists</li>
+            <div class="card-header">
+              <h4>BookNook</h4>
+              <span class="project-date">May 2024 - Present</span>
+            </div>
+            <img src="images/proj2_img.png" width="300" height="200" alt="BookNook Project Image">
+            <ul class="project-list">
+                <li>Built a cross-platform JavaFX desktop app integrating dictionary and book APIs to deliver 10,000+ word definitions, phonetics audio, synonyms/antonyms, and book metadata with cover images, with split-view navigation, multilingual support, and accessibility theming using Maven, Gson, and JavaFX 21</li>
+                <li>Enhanced usability with offline mode, flashcards, favorites/history, and data export, while optimizing API requests with caching and async pipelines to cut latency by 40%, and packaging via jpackage for seamless desktop installation</li>
             </ul>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">Maven</span>
+              <span class="tag">Gson</span>
+              <span class="tag">REST API</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-laptop-code"></i> Tools & Frameworks</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Maven</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">REST API</span>
+                    <span class="skill-tag">Gson</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Vercel</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">ROS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-desktop"></i> Software & Platforms</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Windows</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">macOS</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Microsoft Office</span>
+                    <span class="skill-tag">Emacs</span>
+                    <span class="skill-tag">Cursor</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                <div class="cert-list">
+                    <p><strong>Responsive Web Design with HTML</strong> - FreeCodeCamp</p>
+                    <p><strong>CCSMM Cybersecurity Program Development</strong> - March 2025</p>
+                    <p><strong>Google Foundations of Cybersecurity</strong> - June 2025</p>
+                </div>
             </div>
         </div>
     </section>
     </main>
     <footer>
-        <p> &copy; <a href="contact.html"> Falih Faizal</a>
-        <a href="https://www.linkedin.com/in/falih-faizal-200762236/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        </p>
+        <div class="footer-content">
+            <p>&copy; 2025 <a href="index.html">Falih Faizal</a>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/falih-faizal-200762236/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/falihfaizal95" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:Falih.faizal95@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="contact.html" aria-label="Contact">
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
