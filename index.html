@@ -240,6 +240,69 @@
                 </div>
             </div>
         </div>
+
+        <div class="tool-explorer">
+            <h4 class="tool-explorer-title">Tool Highlights</h4>
+            <p class="tool-explorer-subtitle">Click a tool to see how I use it in real projects.</p>
+            <div class="tool-pills">
+                <button class="tool-pill active" data-tool="nextjs">Next.js</button>
+                <button class="tool-pill" data-tool="react">React</button>
+                <button class="tool-pill" data-tool="javafx">JavaFX</button>
+                <button class="tool-pill" data-tool="supabase">Supabase</button>
+                <button class="tool-pill" data-tool="docker">Docker</button>
+                <button class="tool-pill" data-tool="vercel">Vercel</button>
+            </div>
+            <div class="tool-panels">
+                <div class="tool-panel active" data-tool="nextjs">
+                    <h5>Next.js</h5>
+                    <p>I use Next.js 14 with TypeScript to build full-stack, production-ready applications like LectureAI, combining server-side rendering, API routes, and modern React patterns.</p>
+                    <ul>
+                        <li>Built LectureAI's front-end and back-end with file upload, auth, and dashboard flows.</li>
+                        <li>Optimized performance with dynamic routing, caching, and incremental static regeneration.</li>
+                    </ul>
+                </div>
+                <div class="tool-panel" data-tool="react">
+                    <h5>React</h5>
+                    <p>React is my primary front-end library for building modular, reusable UI components with strong state management and accessibility in mind.</p>
+                    <ul>
+                        <li>Designed responsive, accessible interfaces for web apps and dashboards.</li>
+                        <li>Applied UI/UX best practices from my internship experience to reduce user friction.</li>
+                    </ul>
+                </div>
+                <div class="tool-panel" data-tool="javafx">
+                    <h5>JavaFX</h5>
+                    <p>I use JavaFX to build cross-platform desktop applications with rich, interactive interfaces.</p>
+                    <ul>
+                        <li>Implemented interactive galleries, search views, and split layouts in Vibra and BookNook.</li>
+                        <li>Packaged apps using Maven and jpackage for smooth installation on different platforms.</li>
+                    </ul>
+                </div>
+                <div class="tool-panel" data-tool="supabase">
+                    <h5>Supabase</h5>
+                    <p>Supabase powers authentication, storage, and database features in my full-stack projects.</p>
+                    <ul>
+                        <li>Built LectureAI dashboards with user-specific progress, quiz history, and lecture metadata.</li>
+                        <li>Used row-level security and SQL policies to keep user data safe and scoped correctly.</li>
+                    </ul>
+                </div>
+                <div class="tool-panel" data-tool="docker">
+                    <h5>Docker</h5>
+                    <p>I use Docker to containerize services for consistent environments across development and deployment.</p>
+                    <ul>
+                        <li>Defined multi-stage Dockerfiles to keep images lean and reproducible.</li>
+                        <li>Used containers to align local development with cloud deployment environments.</li>
+                    </ul>
+                </div>
+                <div class="tool-panel" data-tool="vercel">
+                    <h5>Vercel</h5>
+                    <p>Vercel is my go-to platform for deploying modern web apps with Git-based workflows.</p>
+                    <ul>
+                        <li>Deployed LectureAI with automatic previews and production deployments from GitHub.</li>
+                        <li>Monitored performance and improved Core Web Vitals for a smoother user experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     </main>
     <footer>
@@ -261,5 +324,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toolPills = document.querySelectorAll('.tool-pill');
+        const toolPanels = document.querySelectorAll('.tool-panel');
+
+        toolPills.forEach((pill) => {
+          pill.addEventListener('click', () => {
+            const target = pill.getAttribute('data-tool');
+
+            toolPills.forEach((p) => p.classList.remove('active'));
+            toolPanels.forEach((panel) => panel.classList.remove('active'));
+
+            pill.classList.add('active');
+            const activePanel = document.querySelector('.tool-panel[data-tool=\"' + target + '\"]');
+            if (activePanel) {
+              activePanel.classList.add('active');
+            }
+          });
+        });
+      });
+    </script>
 </body>
 </html>

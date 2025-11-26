@@ -572,6 +572,102 @@ section h3 i {
   font-size: 1.1rem;
 }
 
+/************** Tool Explorer (Interactive Tools Section) *****************/
+.tool-explorer {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 100%);
+}
+
+.tool-explorer-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem;
+}
+
+.tool-explorer-subtitle {
+  margin: 0 0 1.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.tool-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.tool-pill {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tool-pill:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(37, 99, 235, 0.12);
+}
+
+.tool-pill.active {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+.tool-panels {
+  margin-top: 0.5rem;
+}
+
+.tool-panel {
+  display: none;
+  padding: 1.5rem 1.25rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.tool-panel.active {
+  display: block;
+}
+
+.tool-panel h5 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.tool-panel p {
+  margin: 0 0 0.75rem;
+  color: #475569;
+}
+
+.tool-panel ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.tool-panel li {
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
 /**************   Responsiveness   *****************/
 @media (max-width: 768px) {
   nav {
