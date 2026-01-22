@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
 </head>
 
 <body>
@@ -18,11 +18,19 @@
     </nav>
 
     <main class="one-col">
-    <h1> Contact Falih Faizal</h1>
-    <p class="address"> 6025 Farrell Way, Duluth, Georgia, 30097 &#x25A0; (678) 920-6711 &#x25A0; mf07861@uga.edu</p>
-    <p class="tagline"> If you need help with internships, projects or help on acquiring research; Leave me a note</p>
+    <h1>Contact Falih Faizal</h1>
+    <p class="address">
+        <a href="mailto:Falih.faizal95@gmail.com"><i class="fas fa-envelope"></i> Falih.faizal95@gmail.com</a> 
+        <span class="separator">&#x25A0;</span>
+        <a href="tel:6789206711"><i class="fas fa-phone"></i> (678) 920-6711</a>
+        <span class="separator">&#x25A0;</span>
+        <a href="https://linkedin.com/in/falih-faizal-200762236/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </p>
+    <p class="tagline">I'm open to discussing opportunities in software development, internships, research collaborations, or any professional inquiries. Please feel free to reach out!</p>
     
-        <form method = "post" action = "https://formsubmit.co/falih.faizal95@gmail.com">
+        <form method="post" action="https://formsubmit.co/falih.faizal95@gmail.com">
+            <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+            <input type="hidden" name="_captcha" value="false">
             <label for="name">Name: </label>
                 <input id="name" name="name" type="text" required />
 
@@ -38,12 +46,20 @@
 
 
     <footer>
-        <p> &copy; <a href="index.html">Falih Faizal</a>
-
-            <a href="https://www.linkedin.com/in/falih-faizal-200762236/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </p>
+        <div class="footer-content">
+            <p>&copy; 2025 <a href="index.html">Falih Faizal</a>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/falih-faizal-200762236/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/falihfaizal95" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:Falih.faizal95@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

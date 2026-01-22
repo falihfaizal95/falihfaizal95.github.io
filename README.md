@@ -9,7 +9,7 @@ In this assignment, you will style a resume website using CSS.
 
 - `style.css`: a template css file linked in index.html and contact.html 
 - `index.html`: a template shell with css file linked
-- `contact.html`: a template shell with css file linked
+- `contact.html`: a template shell with css file linked.
 
 ---
 ## Part 1: Project Setup
@@ -45,4 +45,5 @@ You are to publish your CV to your own GitHub pages site. This is **NOT** your c
 2. **Provide the link on the class Google sheet** 
 
 The link to the Google sheet is provided in the instructions sheet linked above.
+
 
