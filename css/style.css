@@ -235,6 +235,13 @@ header img:hover {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .tagline {
+    white-space: normal;
+  }
 }
 
 /************* Sections ********************/
